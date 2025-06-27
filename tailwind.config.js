@@ -14,20 +14,24 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
-    },
-    screens: {
-
-      'lg': {'max': '1220px'},
-      // => @media (max-width: 1023px) { ... }
-
-      'slg': {'max': '1100px'},
-      // => @media (max-width: 1023px) { ... }
-
-      'md': {'max': '767px'},
-      // => @media (max-width: 767px) { ... }
-
-      'sm': {'max': '639px'},
-      // => @media (max-width: 639px) { ... }
+    },    screens: {
+      'xs': '480px',
+      // => @media (min-width: 480px) { ... }
+      
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+      
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+      
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+      
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+      
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
   },
     extend: {
       colors: {

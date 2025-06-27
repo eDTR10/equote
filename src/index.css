@@ -83,3 +83,27 @@
   }
 }
 
+/* Fix for dark mode form elements */
+@layer components {
+  .dark input,
+  .dark select,
+  .dark textarea {
+    color: hsl(var(--foreground));
+  }
+  
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Fix for scrollbar in dark mode */
+  .dark ::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground));
+  }
+
+  
+}
